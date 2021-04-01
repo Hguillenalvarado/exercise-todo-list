@@ -1,33 +1,28 @@
 import React, { useState } from "react";
 
+import "bootstrap/dist/css/bootstrap.css";
+import card from "./card";
+
 export function Home() {
-	const [tareas, setTareas] = useState("");
-	
-	const [lista, setLista] = useState([""]);  //listado
-
-return (
-    <div className ="text-center mt-5">
-        <h1 className="display-3 text -primary">TodoList</h1>
-        <input 
-            value={tareas}
-            onChange={e=>{
-                setTareas(e-target.value);
-            
-            }}
-            
-            onKeyPress={e=>{
-                if(e.key == "Entrar"){
-                    //adicionar la tarea al arreglo
-                    setLista(lista.concat(tareas));
-                    setTareas(""); //limpiar imput
-                    console.log()lista;
-                }
-
-            }}
-    />
-
-    {lista.map((item, index)) => {
-        return <li key={index}> {item}</li>;
-    })}
-
-
+	return (
+		<div className="App bg-light row d-flex justify-content-center">
+			{/* Titulo */}
+			<div className="col-12 bg-light">
+				<h1>Todos</h1>
+			</div>
+			{/* contenedor de los todos */}
+			<div className="shadow p-3 mb-5 bg-white rounded col-10 mt-3">
+				{/* Input donde escribir los todo */}
+				<div className="form-group">
+					<input type="text" className="form-control" />
+				</div>
+				{/* Componente Contenedor que lista todos los todos creados */}
+				<div className="col-8">{/* Cada tarea o todo */}f</div>
+				{/* Contador de Tasks o todos */}
+				<div className="d-flex justify-content-start">
+					<p> item left</p>
+				</div>
+			</div>
+		</div>
+	);
+}
