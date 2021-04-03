@@ -11,3 +11,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todo-card {
+  border: 1px solid;
+  margin-bottom: 10px;
+}

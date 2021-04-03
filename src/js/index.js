@@ -10,5 +10,9 @@ import "../styles/index.scss";
 //import your own components
 import { Home } from "./component/home.js";
 
-//render your react application
+import App from "./component/home.js";
+
+import Card from "./component/Card.js";
+
+//render your react applicatiSon
 ReactDOM.render(<Home />, document.querySelector("#app"));
