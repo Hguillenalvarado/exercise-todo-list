@@ -8,11 +8,11 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+//import { Home } from "./component/home.js";
 
-import App from "./component/home.js";
+import Home from "./component/home";
 
-import Card from "./component/Card.js";
+//import Card from "./component/Card.js";
 
 //render your react applicatiSon
 ReactDOM.render(<Home />, document.querySelector("#app"));

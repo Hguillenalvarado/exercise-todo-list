@@ -26,8 +26,8 @@
         "imports": "never",
         "exports": "never",
         "functions": "ignore",
-    }],
-    "react/prop-types": [2]
+    }]
+    //"react/prop-types": [2]
   },
   "extends": ["eslint:recommended", "plugin:react/recommended"]
 }

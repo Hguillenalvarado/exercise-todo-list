@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Card(props) {
 	return (
@@ -17,3 +18,20 @@ export default function Card(props) {
 		</>
 	);
 }
+
+Card.propTypes = {
+	taskIndexId: PropTypes.oneOfType([
+		PropTypes.number,
+		PropTypes.oneOf([null, undefined]),
+		PropTypes.string
+	]),
+	taskName: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.oneOf([null, undefined])
+	]),
+	handleRemove: PropTypes.oneOfType([
+		PropTypes.func,
+		PropTypes.string,
+		PropTypes.oneOf([null, undefined])
+	])
+};

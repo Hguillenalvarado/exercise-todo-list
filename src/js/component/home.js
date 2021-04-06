@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "../../styles/index.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import Card from "./Card.js";
 
-export default function App() {
+export default function Home() {
 	const [todo, setTodo] = useState("");
 	const [todoList, setTodoList] = useState([]);
 
